@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    tools:context=".scanner_faceactivity">
+
+    <TextView
+        android:id="@+id/actiontext"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:paddingLeft="20dp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:text="Attendance Tracker"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/rate_btn"
+        android:layout_width="52dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/actiontext"
+        app:layout_constraintStart_toStartOf="@+id/actiontext"
+        app:srcCompat="@drawable/rating_icon" />
+
+    <ImageView
+        android:id="@+id/share_btn"
+        android:layout_width="52dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/actiontext"
+        app:layout_constraintStart_toStartOf="@+id/actiontext"
+        app:srcCompat="@drawable/share_icon" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="249dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/camera_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/facescreen" />
+
+    <Button
+        android:id="@+id/camera_btn"
+        android:layout_width="116dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="116dp"
+        android:text="Camera"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:gravity="center"
+        android:text="Open Camera to Scan and Verify Your Face"
+        android:textColor="@color/textColor"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="416dp"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" >
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="74dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="55dp"
+            android:src="@drawable/home_icon" />
+
+        <ImageView
+            android:id="@+id/p_btn"
+            android:layout_width="74dp"
+            android:layout_height="50dp"
+            android:src="@drawable/person_icon"
+            android:layout_marginLeft="270dp"/>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

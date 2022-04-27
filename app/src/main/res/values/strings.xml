@@ -1,0 +1,10 @@
+<resources>
+    <string name="splash">AttendanceTracker</string>
+    <string name="recognize">Recognize</string>
+    <string name="training">Training</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="email">Email</string>
+    <string name="qr_code_found">QR Code Found</string>
+
+</resources>
